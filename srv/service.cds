@@ -7,6 +7,8 @@ service CatalogService {
     entity address                                as projection on db.ad;
 
     /// combo is mix of bp and ad tables for sake of change
+
+    // otesting with ohav
     entity combo @(cds.redirection.target: false) as
         projection on db.bp {
             BP_ID,
