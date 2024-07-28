@@ -16,7 +16,7 @@ Content-Type: application/json
       "COMPANY_NAME": "SAP",
       "LEGAL_FORM": "SE",
       "APPROVAL_STATUS": "X",
-      "ADDRESS_GUID_NODE_KEY": {
+      "ADDRESS_GUID": {
            "CLIENT": "100",
             "NODE_KEY": "750531BCE7BA1EDF91EAE92F3C0F675",
             "CITY": "India",
@@ -29,5 +29,25 @@ Content-Type: application/json
             "VAL_END_DATE": "99991231",
             "LATITUDE": "48.331816",
             "LONGITUDE": "11.736955"
-    }
+                     }
+}
+
+
+### post validation
+
+POST http://localhost:4004/odata/v4/catalog/businesspartner
+Content-Type: application/json
+
+{
+      "CLIENT": "100",
+      "NODE_KEY": "750531BCE7BA1EDF91EAE92F3C4EA055",
+      "BP_ROLE": "1",
+      "EMAIL_ADDRESS": "shank@sap.com",
+      "PHONE_NUMBER": "622734567",
+      "FAX_NUMBER": "622734004",
+      "WEB_ADDRESS": "http://www.samsoft.com",
+      "BP_ID": "100000050",
+      "COMPANY_NAME": "SAP",
+      "LEGAL_FORM": "SE",
+      "APPROVAL_STATUS": "X"
 }

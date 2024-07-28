@@ -28,4 +28,10 @@ service CatalogService {
             ADDRESS_GUID.LONGITUDE,
             ADDRESS_GUID.POSTAL_CODE
         };
+
+    entity purchaseorder as projection on db.po ;
+
+    entity purchaseorderitem @ ( cds.redirection.target: false ) as projection on db.po.po_i;
+
+    entity  purchaseordersum @ ( cds.redirection.target: false )as projection on db.po_summed;
 }

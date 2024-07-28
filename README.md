@@ -1,25 +1,8 @@
-# Getting Started
-
-Welcome to your new project.
-
-It contains these folders and files, following our recommended project layout:
-
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
 
 
-## Next Steps
-
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
-
-
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+1. You can develop a capm service
+2. create database artifacts and create associations and create cds views
+3. consume external service in capm 
+Project ->  consume an external service and push to hdi .Also do a reset of hana table before pushing. 
+ schedule a job in btp to perform above activity and send an email for completing the posting.
+ Realtime Scenario: We have a live external service and we have to update our database at regular. 
